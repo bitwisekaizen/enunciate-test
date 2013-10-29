@@ -1,0 +1,49 @@
+<enunciate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://enunciate.codehaus.org/schemas/enunciate-1.25.xsd">
+
+    <api-classes>
+        <include pattern="com.thegrayfiles.**"/>
+    </api-classes>
+
+    <services>
+        <rest defaultRestSubcontext="/api">
+            <custom-resource-parameter-annotation qualifiedName="com.sun.jersey.multipart.FormDataParam" />
+        </rest>
+    </services>
+
+    <webapp disable="true"/>
+
+    <modules>
+        <docs docsDir="api" title="Test API"
+              copyright="thegrayfiles.com"
+              splashPackage="com.thegrayfiles"
+              includeExampleXml="false"
+              includeExampleJson="true"/>
+
+        <xml prettyPrint="true">
+            <schema namespace="http://www.thegrayfiles.com/api/v1.0" file="tgf-api_1.0.xsd"/>
+        </xml>
+
+        <amf disabled="true"/>
+        <c disabled="true"/>
+        <csharp disabled="true"/>
+        <cxf disabled="true"/>
+        <gwt disabled="true"/>
+        <jaxws disabled="true"/>
+        <jaxws-support disabled="true"/>
+        <jaxws-client disabled="true"/>
+        <jaxws-ri disabled="true"/>
+        <jboss disabled="true"/>
+        <jersey disabled="true"/>
+        <obj-c disabled="true"/>
+        <ruby disabled="true"/>
+        <spring-app disabled="true"/>
+        <xfire disabled="true"/>
+        <xfire-client disabled="true"/>
+
+    </modules>
+    <namespaces>
+        <namespace id="tgf_1.0" uri="http://www.thegrayfiles.com/api/v1.0"/>
+    </namespaces>
+
+</enunciate>

@@ -21,12 +21,13 @@
                         <groupId>org.codehaus.enunciate</groupId>
                         <artifactId>maven-enunciate-plugin</artifactId>
                         <!-- <version>1.27-java7-patched</version> -->
-                        <version>1.27</version>
+                        <version>1.28-SNAPSHOT</version>
                         <configuration>
                             <!--
                             <javacSourceVersion>7</javacSourceVersion>
                             <javacTargetVersion>7</javacTargetVersion>
                             -->
+			    <poo>poo</poo>
                             <enunciateArtifactId>asdf</enunciateArtifactId>
                             <moduleName>asdf</moduleName>
                             <configFile>src/conf/enunciate.xml</configFile>

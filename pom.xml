@@ -20,14 +20,10 @@
                     <plugin>
                         <groupId>org.codehaus.enunciate</groupId>
                         <artifactId>maven-enunciate-plugin</artifactId>
-                        <!-- <version>1.27-java7-patched</version> -->
-                        <version>1.28-SNAPSHOT</version>
+                        <version>1.27-java7-patched</version>
                         <configuration>
-                            <!--
                             <javacSourceVersion>7</javacSourceVersion>
                             <javacTargetVersion>7</javacTargetVersion>
-                            -->
-			    <poo>poo</poo>
                             <enunciateArtifactId>asdf</enunciateArtifactId>
                             <moduleName>asdf</moduleName>
                             <configFile>src/conf/enunciate.xml</configFile>
@@ -49,6 +45,16 @@
                                 <scope>system</scope>
                                 <systemPath>${java.home}/../lib/tools.jar</systemPath>
                             </dependency>
+			    <dependency>
+			      <groupId>org.codehaus.enunciate</groupId>
+			      <artifactId>enunciate-core</artifactId>
+			      <version>1.27-java7-patched</version>
+			    </dependency>
+			    <dependency>
+			      <groupId>org.codehaus.enunciate</groupId>
+			      <artifactId>maven-enunciate-slim-plugin</artifactId>
+			      <version>1.27-java7-patched</version>
+			    </dependency>
                         </dependencies>
                     </plugin>
                 </plugins>
